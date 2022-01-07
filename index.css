@@ -58,9 +58,11 @@ body {
     min-height: 50px;
     margin-left: calc(100% * 0.06);
     margin-top: 30px;
-    padding: 20px;display: table;
+    padding: 20px;
+    display: table;
 }
-#coursescontainer table tr td{
+
+#coursescontainer table tr td {
     text-align: left;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -151,6 +153,36 @@ hr {
     color: gray;
 }
 
+#eventcontainer {    
+    /* From https://css.glass */   -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    background: linear-gradient(-45deg, rgb(139, 2, 21), rgb(65, 0, 43),  rgb(36, 2, 2),black);
+    background-size: 100% 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    max-width: calc(100% * 0.75);
+    min-height: 50px;
+    margin-left: calc(100% * 0.06);
+    margin-top: 30px;
+    display: table;
+    cursor: pointer;
+}
+#eventcontainer img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.viewbtn{
+    background-color: rebeccapurple;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
 .leftdetail {
     cursor: pointer;
     margin-top: 110px;
@@ -173,6 +205,7 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index:1; /*Add this*/
 }
 
 nav h3 {
@@ -321,6 +354,11 @@ nav h3 {
 
 
 @media(max-width: 850px) {
+    
+#eventcontainer img{
+    width: 80px;
+    height: 80px;
+}
     #collegedetail {
         flex-direction: column;
     }

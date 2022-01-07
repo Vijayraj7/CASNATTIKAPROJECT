@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=100, initial-scale=1.0">
     <title>CAS NATTIKA</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
@@ -149,7 +150,11 @@
 
         </div>
         <center>
-            <div id="staffviewall">
+            <div id="staffviewall" onclick="onstaffviewallclick()">
+                <script>
+                    function onstaffviewallclick(){window.open('html/staffs.html')
+                    }
+                </script>
                 View all
             </div>
         </center>
@@ -171,7 +176,7 @@
                 <td class="c22">Msc Electronics</td>
             </tr>
         </table>
-     
+
     </div>
     <div class="leftdetail detail">
         <h3>Library</h3>
@@ -189,10 +194,150 @@
         <h3>Computer Lab</h3>
         <h4>get the all details of books in library</h4>
         <h1>Next -></h1>
-    </div>
-    <div style="height: 5000px;"></div>
-    <footer>
 
+    </div>
+
+
+    <!-- events -->
+    <h3 id="staffhead">Events</h3>
+    <div id="eventcontainer">
+
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kzK0vySth_HKOvj6i7PubLOsfE4m6QyyJg&usqp=CAU" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVABMlbjOH93-084xuv8oXnTAg5AkivcC0w&usqp=CAU" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyAowe69gl-a9t86rSbR7OleF6hYNrylKftQ&usqp=CAU" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kzK0vySth_HKOvj6i7PubLOsfE4m6QyyJg&usqp=CAU" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kzK0vySth_HKOvj6i7PubLOsfE4m6QyyJg&usqp=CAU" > -->
+        <script>
+            var imgs = [
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kzK0vySth_HKOvj6i7PubLOsfE4m6QyyJg&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVABMlbjOH93-084xuv8oXnTAg5AkivcC0w&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyAowe69gl-a9t86rSbR7OleF6hYNrylKftQ&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJ2_zVTb9UbhG0ZfwZQs7TNUUMVnKV4RT4A&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kzK0vySth_HKOvj6i7PubLOsfE4m6QyyJg&usqp=CAU',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVABMlbjOH93-084xuv8oXnTAg5AkivcC0w&usqp=CAU',
+                'https://www.stovekraft.com/images/pigeon/view_all_pigeon.jpg'
+            ];
+            var pics = document.getElementById('eventcontainer');
+            for (let i = 0; i < imgs.length; i++) {
+
+                if (imgs[i] != 'l') {
+                    var img = document.createElement('img');
+                    img.src = imgs[i];
+                    pics.appendChild(img);
+                    pics.classList.add('eventimgs');
+                } else {
+                    var img = document.createElement('img');
+                    img.src = imgs[i];
+                    pics.appendChild(img);
+                    pics.classList.add('eventimgs');
+                }
+
+
+            }
+
+        </script>
+
+    </div>
+
+
+    <div style="height: 500px;"></div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Cas Nattika</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                Vijayrajrahul <br>
+                9072424102 <br>
+                India <br>
+                Kerala <br>
+                Thrissur <br>
+                Valapad Beach <br>
+
+
+                <a class="footer__btn" href="mailto:vijayrajrahul07@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Print</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Alternative Ads</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Automation</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Artificial Intelligence</a>
+                    </li>
+
+                    <li>
+                        <a href="#">IoT</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2019 Something. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+            </div>
+        </div>
     </footer>
 </body>
 
