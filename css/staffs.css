@@ -83,6 +83,7 @@ nav h3 {
 }
 
 .staffitems {
+    margin: 10px;
     width: 100%;
     min-height: 50px;
     max-height: 75px;
@@ -136,6 +137,12 @@ nav h3 {
 
     .staffitems div h2 {
         font-size: calc(100% * 0.9);
+    }
+    .staffitems img {
+        border-radius: 300px;
+        width: 30px;
+        height: 30px;
+    
     }
 
     #header h3 p {
