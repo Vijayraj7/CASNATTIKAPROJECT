@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../html/staffbg.svg');
+    background-image: url('../pics/staffbg.svg');
 }
 
 #header {
@@ -83,7 +83,6 @@ nav h3 {
 }
 
 .staffitems {
-    margin: 10px;
     width: 100%;
     min-height: 50px;
     max-height: 75px;
@@ -102,7 +101,8 @@ nav h3 {
 .staffitems div {
     margin-left: calc(100% * 0.04);
     height: 100px;
-    display: flex;
+  
+     display: flex;
     justify-content: center;
     flex-direction: column;
 
