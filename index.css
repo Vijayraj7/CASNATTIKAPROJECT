@@ -157,14 +157,14 @@ hr {
 
 #eventcontainer {
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.32);
+    background: rgba(30, 30, 30, 0.56);
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.4px);
-    -webkit-backdrop-filter: blur(6.4px);
-    border: 1px solid rgba(0, 0, 0, 0.31);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(30, 30, 30, 0.33);
     max-width: calc(100% * 0.75);
     min-height: 50px;
     margin-left: calc(100% * 0.06);
@@ -194,13 +194,13 @@ hr {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: calc(100% * 0.05);
-   /* From https://css.glass */
-background: rgba(255, 255, 255, 0.83);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.8px);
--webkit-backdrop-filter: blur(6.8px);
-border: 1px solid rgba(255, 255, 255, 0.27);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.83);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
 }
 
 nav {
@@ -273,7 +273,8 @@ nav h3 {
     width: calc(100% * 0.6);
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: calc(100% * 0.35);/* From https://css.glass */
+    margin-left: calc(100% * 0.35);
+    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.83);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -291,16 +292,9 @@ nav h3 {
     display: table;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    /* From https://css.glass */
-    background: rgba(13, 13, 13, 0.25);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.9px);
-    -webkit-backdrop-filter: blur(4.9px);
-    border: 1px solid rgba(13, 13, 13, 0.27);
 }
 
 #staffs {
@@ -341,12 +335,15 @@ nav h3 {
 }
 
 .staffitems {
-    background: rgba(211, 211, 211, 0.11);
-    border-radius: 6px;
+    /* From https://css.glass */
+    background: rgba(30, 30, 30, 0.56);
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13.3px);
-    -webkit-backdrop-filter: blur(13.3px);
-    border: 1px solid rgba(211, 211, 211, 0.05);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(30, 30, 30, 0.33);
     margin: 10px;
     min-height: 50px;
     max-height: 75px;
@@ -453,3 +450,28 @@ nav h3 {
 
     }
 }
+
+/* Style the header */
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
