@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../pics/staffbg.svg');
+}
+
+#header {
+    margin-left: calc(100% * 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#header h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: calc(100% * 5);
+    color: white;
+}
+
+#header h3 p {
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: gray;
+}
+
+#header h3 button {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#header img {
+    width: calc(100% * 0.6);
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.5);
+    backdrop-filter: blur(3px);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    /*Add this*/
+}
+
+nav h3 {
+    color: rgb(26, 26, 26);
+    font-size: calc(100% * 1);
+    font-family: 'Comfortaa', cursive;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table tr td{
+    font-family: 'Comfortaa', cursive;
+    color: rgb(231, 231, 231);
+    font-size: 12px;
+    
+}table tr td img{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(20, 88, 177);
+    border-radius: 10px;
+}
+#teacherscontainer{
+    /* From https://css.glass */
+    background: rgba(0, 133, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(0, 133, 255, 0.27);
+    max-width: calc(100% * 0.8);
+    margin-left: calc(100% * 0.1);
+    height: calc(auto + 50px);
+    display: grid;
+    grid-template-columns: auto ;
+    margin-top: 200px;
+}
+.teachersitems {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.teachersitems img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.teachersitems div h2 {
+    color: rgb(255, 255, 255);
+    font-size: calc(100% * 1.4);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.teachersitems div h3 {
+    color: gray;
+    font-size: calc(100% * 0.9);
+    font-family: 'Comfortaa', cursive;
+}
+
+#bscscontainer {
+    /* From https://css.glass */
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(0, 133, 255, 0.27);
+    width: calc(100% * 0.7);
+    margin-left: calc(100% * 0.15);
+    min-height: 1000px;
+    margin-top: 100px;
+    padding-top: 50px;
+
+}
+
+
+@media(max-width: 850px) {
+    #header h3 {
+        font-family: 'Comfortaa', cursive;
+        font-size: calc(100% * 3);
+    }
+
+    #bscscontainer {
+        grid-template-columns: auto auto;
+    }
+
+    
+    #header h3 p {
+        font-size: 15px;
+    }
+    .teachersitems div h2 {
+        font-size: calc(100% * 1);
+     
+    }
+    
+    .teachersitems div h3 {
+        font-size: calc(100% * 0.6);
+    }
+    table tr td{
+        font-family: 'Comfortaa', cursive;
+        color: rgb(231, 231, 231);
+        font-size: 9px;
+        
+    }table tr td img{
+        width: 50px;
+        height: 50px;
+        border: 2px solid rgb(20, 88, 177);
+        border-radius: 10px;
+    }
+}
