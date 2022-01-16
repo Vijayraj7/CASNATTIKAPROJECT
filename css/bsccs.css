@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../pics/staffbg.svg');
+    background-image: url('../pics/bscbgsvg.svg');
 }
 
 #header {
@@ -40,7 +40,7 @@ body {
 }
 
 #header img {
-    width: calc(100% * 0.6);
+    width: calc(100% * 0.5);
 }
 
 nav {
@@ -63,47 +63,76 @@ nav h3 {
     font-size: calc(100% * 1);
     font-family: 'Comfortaa', cursive;
 }
-table{
-    width: 100%;
+
+table {
+
+    width: calc(100% * 0.8);
     text-align: center;
+    border-collapse: separate !important;
+    border-spacing: 0 1em;
 }
-table tr td{
+
+table tr {
+    /* From https://css.glass */
+    background: rgba(26, 26, 26, 0.56);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(13, 13, 13, 0.27);
+}
+
+table tr td {
+    padding: 15px;
     font-family: 'Comfortaa', cursive;
     color: rgb(231, 231, 231);
     font-size: 12px;
-    
-}table tr td img{
+    text-align: center;
+
+}
+
+#stdh {
+    font-family: 'Comfortaa', cursive;
+    color: rgb(231, 231, 231);
+    font-size: 32px;
+
+}
+
+table tr td img {
+    padding: 20px;
     width: 100px;
     height: 100px;
-    border: 2px solid rgb(20, 88, 177);
-    border-radius: 10px;
+    border-radius: 40px;
 }
-#teacherscontainer{
+
+#teacherscontainer {
     /* From https://css.glass */
     background: rgba(0, 133, 255, 0.1);
+    border: 1px solid rgba(0, 133, 255, 0.27);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
-    border: 1px solid rgba(0, 133, 255, 0.27);
     max-width: calc(100% * 0.8);
     margin-left: calc(100% * 0.1);
     height: calc(auto + 50px);
     display: grid;
-    grid-template-columns: auto ;
-    margin-top: 200px;
+    grid-template-columns: auto;
+    margin-top: 140px;
 }
+
 .teachersitems {
     min-height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.teachersitems img{
+
+.teachersitems img {
     width: 100px;
     height: 100px;
     margin: 20px;
 }
+
 .teachersitems div h2 {
     color: rgb(255, 255, 255);
     font-size: calc(100% * 1.4);
@@ -125,11 +154,11 @@ table tr td{
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
     border: 1px solid rgba(0, 133, 255, 0.27);
-    width: calc(100% * 0.7);
-    margin-left: calc(100% * 0.15);
+    width: calc(100% * 0.94);
+    margin-left: calc(100% * 0.03);
     min-height: 1000px;
     margin-top: 100px;
-    padding-top: 50px;
+    padding-top: 20px;
 
 }
 
@@ -137,34 +166,41 @@ table tr td{
 @media(max-width: 850px) {
     #header h3 {
         font-family: 'Comfortaa', cursive;
-        font-size: calc(100% * 3);
+        font-size: calc(100% * 2);
+    }
+    #header img {
+        width: 200px;
+        height: 200px;
     }
 
     #bscscontainer {
         grid-template-columns: auto auto;
     }
 
-    
+
     #header h3 p {
         font-size: 15px;
     }
+
     .teachersitems div h2 {
         font-size: calc(100% * 1);
-     
+
     }
-    
+
     .teachersitems div h3 {
         font-size: calc(100% * 0.6);
     }
-    table tr td{
+
+    table tr td {
         font-family: 'Comfortaa', cursive;
         color: rgb(231, 231, 231);
         font-size: 9px;
-        
-    }table tr td img{
-        width: 50px;
-        height: 50px;
-        border: 2px solid rgb(20, 88, 177);
+
+    }
+
+    table tr td img {
+        width: 30px;
+        height: 30px;
         border-radius: 10px;
     }
 }

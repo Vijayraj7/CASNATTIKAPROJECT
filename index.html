@@ -169,12 +169,26 @@
                 <td class="c1">PG</td>
             </tr>
             <tr>
-                <td class="c21">Bsc Computer Science</td>
-                <td class="c21">Msc Computer Science</td>
+                <script>
+                    function bsccomponclick() {
+                        window.open('html/bscs.html')
+                    }
+                    function bscelectclick() {
+                        window.open('html/bscelect.html')
+                    }
+                    function msccomponclick() {
+                        window.open('html/mscs.html')
+                    }
+                    function mscelectclick() {
+                        window.open('html/mscelect.html')
+                    }
+                </script>
+                <td class="c21" onclick="bsccomponclick()">Bsc Computer Science</td>
+                <td class="c21" onclick="msccomponclick()">Msc Computer Science</td>
             </tr>
             <tr>
-                <td class="c22">Bsc Electronics</td>
-                <td class="c22">Msc Electronics</td>
+                <td class="c22" onclick="bscelectclick()">Bsc Electronics</td>
+                <td class="c22" onclick="mscelectclick()">Msc Electronics</td>
             </tr>
         </table>
 
@@ -197,7 +211,6 @@
         <h1>Next -></h1>
 
     </div>
-
 
     <!-- events -->
     <h3 id="staffhead">Events</h3>
