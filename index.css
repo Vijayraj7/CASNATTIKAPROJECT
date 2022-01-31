@@ -142,11 +142,11 @@ hr {
     backdrop-filter: blur(13.3px);
     -webkit-backdrop-filter: blur(13.3px);
     border: 1px solid rgba(211, 211, 211, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-center{
-    display: absolute;
-    top: -50;
-}
+
 #collegedetail p {
     margin-left: 15px;
     line-height: 1.3;
