@@ -12,18 +12,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <nav>
-        <h3>CAS NATTIKA</h3>
-        <h2></h2>
-    </nav>
+    <div id="navfd"></div>
+    <script>
+        $(function () {
+            $("#navfd").load("html/nav.html");
+        });
+    </script>
     <div id="about">
         <div id="aboutsh">
             <div id="abouttitle">
-                <h2>Cas nattika</h2>
+                <h2>CAS NATTIKA</h2>
                 <h4>website for maintain college</h4>
                 <button id="c" onmousedown="onhomeclick()" onmouseup="onhomeclic()">University of Calicut</button>
                 <script>
@@ -229,13 +233,13 @@
 
     <div class="rightdetail detail">
         <h3>Electronics Lab</h3>
-        <h4>get the all details of books in library</h4>
+        <h4>details of Electronics Lab</h4>
         <h1>Next -></h1>
     </div>
 
     <div class="leftdetail detail">
         <h3>Computer Lab</h3>
-        <h4>get the all details of books in library</h4>
+        <h4>details of Computer Lab</h4>
         <h1 id="clab" onclick="onlabclick()">Next -></h1>
         <script>
             function onlabclick() {
@@ -388,7 +392,34 @@
             </div>
         </div>
     </footer>
-
+    <script>
+    (function ($) {
+            // Begin jQuery
+            $(function () {
+                // DOM ready
+                // If a link has a dropdown, add sub menu toggle.
+                $("nav ul li a:not(:only-child)").click(function (e) {
+                    $(this).siblings(".nav-dropdown").toggle();
+                    // Close one dropdown when selecting another
+                    $(".nav-dropdown").not($(this).siblings()).hide();
+                    e.stopPropagation();
+                });
+                // Clicking away from dropdown will remove the dropdown class
+                $("html").click(function () {
+                    $(".nav-dropdown").hide();
+                });
+                // Toggle open and close nav styles on click
+                $("#nav-toggle").click(function () {
+                    $("nav ul").slideToggle();
+                });
+                // Hamburger to X toggle
+                $("#nav-toggle").on("click", function () {
+                    this.classList.toggle("active");
+                });
+            }); // end DOM ready
+        })(jQuery); // end jQuery
+    </script>
 </body>
 
+<script src="nav.js"></script>
 </html>

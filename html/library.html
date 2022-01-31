@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=100, initial-scale=1.0">
-    <title>CAS NATTIKA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsc Computer Science</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../css/bsccs.css">
     <link rel="stylesheet" href="../footer.css">
@@ -13,14 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <nav>
-        <h3>CAS NATTIKA | Library</h3>
-        <h2></h2>
-    </nav>
+    <div id="navfd"></div>
+    <script>
+        $(function () {
+            $("#navfd").load("nav.html");
+        });
+    </script>
 
     <div id="header">
         <h3>Library
@@ -229,4 +233,5 @@
     }
 </style>
 
+<script src="nav.js"></script>
 </html>
