@@ -156,6 +156,17 @@
                     </h2>
                 </div>
             </div>
+            <div class="staffitems"> <img src="pics/principalpic.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
 
 
         </div>
@@ -206,7 +217,12 @@
     <div class="leftdetail detail">
         <h3>Library</h3>
         <h4>get the all details of books in library</h4>
-        <h1>Next -></h1>
+        <h1 id="clibrary" onclick="onlibraryclick()">Next -></h1>
+        <script>
+            function onlibraryclick() {
+                window.open('html/library.html');
+            }
+        </script>
     </div>
 
     <div class="rightdetail detail">
@@ -218,8 +234,12 @@
     <div class="leftdetail detail">
         <h3>Computer Lab</h3>
         <h4>get the all details of books in library</h4>
-        <h1>Next -></h1>
-
+        <h1 id="clab" onclick="onlabclick()">Next -></h1>
+        <script>
+            function onlabclick() {
+                window.open('html/cslab.html');
+            }
+        </script>
     </div>
 
     <!-- events -->
@@ -243,12 +263,13 @@
             ];
             var pics = document.getElementById('eventcontainer');
             for (let i = 0; i < imgs.length; i++) {
-
-                if (imgs[i] != 'l') {
+                var l = imgs.length - 1;
+                if (i == l) {
                     var img = document.createElement('img');
                     img.src = imgs[i];
                     pics.appendChild(img);
                     pics.classList.add('eventimgs');
+                    img.onclick = cc;
                 } else {
                     var img = document.createElement('img');
                     img.src = imgs[i];
@@ -258,7 +279,9 @@
 
 
             }
-
+            function cc() {
+                window.open('html/events.html');
+            }
         </script>
 
     </div>

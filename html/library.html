@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>CAS NATTIKA</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/bsccs.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <h3>CAS NATTIKA | Library</h3>
+        <h2></h2>
+    </nav>
+
+    <div id="header">
+        <h3>Library
+            <br>
+            <p>under graduate</p>
+            <button id="b" onmousedown="onhomeclick()" onmouseup="onhomeclic()">Home</button>
+            <script>
+                function onhomeclick() {
+                    document.getElementById('b').style.webkitTransform = 'scale(0.9)';
+                }
+                function onhomeclic() {
+                    document.getElementById('b').style.webkitTransform = 'scale(1)';
+                    window.open('../index.html')
+                }
+            </script>
+        </h3>
+        <img src="../pics/librarypng.png">
+    </div>
+    <div id="teacherscontainer">
+        <div class="teachersitems">
+
+            <img src="../pics/teacherphoto.jpeg">
+
+            <div>
+                <h2>
+                    SALIMA P S
+                </h2>
+                <h3>
+                    Class Teacher, Maths Teacher
+                </h3>
+            </div>
+
+        </div>
+        <div class="teachersitems">
+
+            <img src="../pics/teacherphoto.jpeg">
+
+            <div>
+                <h2>
+                    SALIMA P S
+                </h2>
+                <h3>
+                    Class Teacher, Maths Teacher
+                </h3>
+            </div>
+
+        </div>
+        <div class="teachersitems">
+
+            <img src="../pics/teacherphoto.jpeg">
+
+            <div>
+                <h2>
+                    SALIMA P S
+                </h2>
+                <h3>
+                    Class Teacher, Maths Teacher
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+    <h3 id="staffhead">Books</h3>
+    <div id="staffs">
+        <div class="staffcontainer">
+
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        HarryPotter
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+            <div class="staffitems"> <img src="../pics/harrypotterb.jpg">
+
+                <div>
+                    <h3>
+                        Mr Surendar
+                    </h3>
+                    <h2>
+                        principle
+                    </h2>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="height: 1000px;">
+
+        </div>
+
+</body>
+<style>
+    body {
+        background-image: url('../pics/librarybgsvg.svg');
+    }
+
+    #teacherscontainer {
+        /* From https://css.glass */
+        background: rgba(13, 13, 13, 0.25);
+        border: 1px solid rgba(6, 49, 97, 0.24);
+    }
+
+    #header img {
+        width: calc(100% * 0.3);
+        height: calc(100% * 0.3);
+    }
+
+    .staffitems img {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+
+    }
+
+    .staffitems {
+        max-height: 130px;
+    }
+
+    #staffs {
+        margin-left: calc(100% * 0.1);
+        margin-top: 20px;
+    }
+
+    #staffhead {
+        margin-top: 90px;
+        margin-left: calc(100% * 0.1);
+    }
+
+    @media(max-width: 850px) {
+        .staffitems img {
+            width: 40px;
+            height: 40px;
+            margin: 5px;
+
+        }
+
+        .staffitems {
+        max-height: 70px;
+        }
+    }
+</style>
+
+</html>
